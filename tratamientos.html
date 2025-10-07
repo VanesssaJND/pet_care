@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex h-screen">
+<aside class="flex flex-col w-64 bg-background-light dark:bg-background-dark border-r border-background-light/10 dark:border-background-dark/10">
+<div class="flex items-center justify-center h-16 border-b border-black/10 dark:border-white/10 px-4">
+<a class="flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-3xl text-primary">pets</span>
+<h1 class="text-xl font-bold text-black dark:text-white">PetCare</h1>
+</a>
+</div>
+<nav class="flex-1 p-4 space-y-2">
+<a class="flex items-center px-4 py-2 text-sm font-medium text-black/60 dark:text-white/60 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined mr-3">dashboard</span>
+                    Dashboard
+                </a>
+<a class="flex items-center px-4 py-2 text-sm font-medium text-black/60 dark:text-white/60 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined mr-3">group</span>
+                    Clientes
+                </a>
+<a class="flex items-center px-4 py-2 text-sm font-medium text-black/60 dark:text-white/60 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined mr-3">pets</span>
+                    Mascotas
+                </a>
+<a class="flex items-center px-4 py-2 text-sm font-medium text-black/60 dark:text-white/60 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined mr-3">calendar_month</span>
+                    Citas
+                </a>
+<a class="flex items-center px-4 py-2 text-sm font-medium text-primary bg-primary/20 dark:bg-primary/30 rounded-lg" href="#">
+<span class="material-symbols-outlined mr-3">syringe</span>
+                    Tratamientos
+                </a>
+</nav>
+</aside>
+<main class="flex-1 flex flex-col overflow-hidden">
+<header class="flex items-center justify-between p-6 border-b border-black/10 dark:border-white/10">
+<div>
+<h1 class="text-2xl font-bold text-black dark:text-white">Tratamientos</h1>
+<p class="text-sm text-black/60 dark:text-white/60">Registro y seguimiento de tratamientos para mascotas.</p>
+</div>
+</header>
+<div class="flex-1 p-6 overflow-y-auto">
+<div class="flex justify-between items-center mb-6">
+<div class="relative w-full max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-black/40 dark:text-white/40">search</span>
+<input class="w-full pl-10 pr-4 py-2 rounded-lg bg-white/50 dark:bg-black/20 text-black dark:text-white placeholder:text-black/40 dark:placeholder:text-white/40 border border-black/10 dark:border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Buscar tratamientos por mascota..." type="text"/>
+</div>
+<button class="flex items-center justify-center h-10 px-4 ml-4 bg-primary text-white text-sm font-bold rounded-lg whitespace-nowrap">
+<span class="material-symbols-outlined mr-2">add</span>
+                        Añadir Tratamiento
+                    </button>
+</div>
+<div class="bg-background-light dark:bg-background-dark/50 rounded-xl border border-black/10 dark:border-white/10 overflow-hidden">
+<div class="p-4">
+<h2 class="text-lg font-bold text-black dark:text-white">Historial de Tratamientos</h2>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-sm text-left text-black/80 dark:text-white/80">
+<thead class="text-xs text-black/60 dark:text-white/60 uppercase bg-black/5 dark:bg-white/5">
+<tr>
+<th class="px-6 py-3" scope="col">Mascota</th>
+<th class="px-6 py-3" scope="col">Fecha</th>
+<th class="px-6 py-3" scope="col">Descripción</th>
+<th class="px-6 py-3" scope="col">Medicamentos</th>
+<th class="px-6 py-3" scope="col">Dosis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-black/10 dark:border-white/10">
+<th class="px-6 py-4 font-medium text-black dark:text-white whitespace-nowrap" scope="row">Max</th>
+<td class="px-6 py-4">2024-07-20</td>
+<td class="px-6 py-4">Vacunación anual</td>
+<td class="px-6 py-4">Vacuna contra la rabia</td>
+<td class="px-6 py-4">1 ml</td>
+</tr>
+<tr class="border-b border-black/10 dark:border-white/10">
+<th class="px-6 py-4 font-medium text-black dark:text-white whitespace-nowrap" scope="row">Bella</th>
+<td class="px-6 py-4">2024-06-15</td>
+<td class="px-6 py-4">Desparasitación</td>
+<td class="px-6 py-4">Desparasitante interno</td>
+<td class="px-6 py-4">1 tableta</td>
+</tr>
+<tr class="border-b border-black/10 dark:border-white/10">
+<th class="px-6 py-4 font-medium text-black dark:text-white whitespace-nowrap" scope="row">Rocky</th>
+<td class="px-6 py-4">2024-05-10</td>
+<td class="px-6 py-4">Control de pulgas</td>
+<td class="px-6 py-4">Pipeta antipulgas</td>
+<td class="px-6 py-4">1 pipeta</td>
+</tr>
+<tr class="border-b border-black/10 dark:border-white/10">
+<th class="px-6 py-4 font-medium text-black dark:text-white whitespace-nowrap" scope="row">Luna</th>
+<td class="px-6 py-4">2024-04-05</td>
+<td class="px-6 py-4">Limpieza dental</td>
+<td class="px-6 py-4">Anestesia general</td>
+<td class="px-6 py-4">Según peso</td>
+</tr>
+<tr>
+<th class="px-6 py-4 font-medium text-black dark:text-white whitespace-nowrap" scope="row">Coco</th>
+<td class="px-6 py-4">2024-03-01</td>
+<td class="px-6 py-4">Tratamiento de alergia</td>
+<td class="px-6 py-4">Antihistamínico</td>
+<td class="px-6 py-4">5 mg</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

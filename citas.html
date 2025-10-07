@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PetCare Pro - Citas</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope:wght@400;500;700;800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#13a4ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+              "foreground-light": "#0d171b",
+              "foreground-dark": "#f6f7f8",
+              "subtle-light": "#e7eff3",
+              "subtle-dark": "#1a2a33",
+              "muted-light": "#4c809a",
+              "muted-dark": "#a0b8c6"
+            },
+            fontFamily: {
+              "display": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+<div class="flex min-h-screen">
+<aside class="w-64 bg-subtle-light dark:bg-subtle-dark/20 p-6 flex-shrink-0">
+<div class="flex flex-col h-full">
+<div class="flex items-center gap-2 mb-10">
+<span class="material-symbols-outlined text-primary" style="font-size: 36px;">pets</span>
+<h1 class="text-xl font-bold text-foreground-light dark:text-foreground-dark">Pet Care</h1>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-medium">Clientes</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="#">
+<span class="material-symbols-outlined">pets</span>
+<span class="font-medium">Mascotas</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg bg-primary text-white" href="#">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="font-medium">Citas</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="#">
+<span class="material-symbols-outlined">syringe</span>
+<span class="font-medium">Tratamientos</span>
+</a>
+</nav>
+</div>
+</aside>
+<main class="flex-1 p-8">
+<header class="mb-8">
+<h1 class="text-4xl font-bold">Citas</h1>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-1 bg-subtle-light dark:bg-subtle-dark/20 rounded-lg p-6">
+<div class="flex items-center justify-between mb-4">
+<button class="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<h2 class="text-lg font-bold">Julio 2024</h2>
+<button class="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center">
+<div class="font-bold text-muted-light dark:text-muted-dark text-sm">D</div>
+<div class="font-bold text-muted-light dark:text-muted-dark text-sm">L</div>
+<div class="font-bold text-muted-light dark:text-muted-dark text-sm">M</div>
+<div class="font-bold text-muted-light dark:text-muted-dark text-sm">M</div>
+<div class="font-bold text-muted-light dark:text-muted-dark text-sm">J</div>
+<div class="font-bold text-muted-light dark:text-muted-dark text-sm">V</div>
+<div class="font-bold text-muted-light dark:text-muted-dark text-sm">S</div>
+<div class="text-muted-light dark:text-muted-dark/50">30</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">1</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">2</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">3</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">4</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full bg-primary text-white cursor-pointer">5</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">6</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">7</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">8</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">9</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">10</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">11</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">12</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">13</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">14</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">15</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">16</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">17</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">18</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">19</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">20</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">21</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">22</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">23</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">24</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">25</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">26</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">27</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">28</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">29</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">30</div>
+<div class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer">31</div>
+</div>
+</div>
+<div class="lg:col-span-2 space-y-8">
+<div>
+<h2 class="text-2xl font-bold mb-4">Citas Pendientes</h2>
+<div class="space-y-4">
+<div class="bg-subtle-light dark:bg-subtle-dark/20 p-4 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 text-primary p-3 rounded-full">
+<span class="material-symbols-outlined">medical_services</span>
+</div>
+<div>
+<p class="font-bold">Consulta General</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Cliente: Sofia Ramirez, Mascota: Max</p>
+</div>
+</div>
+<p class="font-medium text-muted-light dark:text-muted-dark">10:00 AM</p>
+</div>
+<div class="bg-subtle-light dark:bg-subtle-dark/20 p-4 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 text-primary p-3 rounded-full">
+<span class="material-symbols-outlined">vaccines</span>
+</div>
+<div>
+<p class="font-bold">Vacunación</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Cliente: Carlos Mendoza, Mascota: Luna</p>
+</div>
+</div>
+<p class="font-medium text-muted-light dark:text-muted-dark">11:30 AM</p>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-2xl font-bold mb-4">Citas Completadas</h2>
+<div class="space-y-4">
+<div class="bg-subtle-light dark:bg-subtle-dark/20 p-4 rounded-lg flex items-center justify-between opacity-70">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 text-primary p-3 rounded-full">
+<span class="material-symbols-outlined">shower</span>
+</div>
+<div>
+<p class="font-bold">Baño y Corte</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Cliente: Ana Torres, Mascota: Rocky</p>
+</div>
+</div>
+<p class="font-medium text-muted-light dark:text-muted-dark">9:00 AM</p>
+</div>
+<div class="bg-subtle-light dark:bg-subtle-dark/20 p-4 rounded-lg flex items-center justify-between opacity-70">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 text-primary p-3 rounded-full">
+<span class="material-symbols-outlined">pest_control</span>
+</div>
+<div>
+<p class="font-bold">Desparasitación</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Cliente: Javier Lopez, Mascota: Bella</p>
+</div>
+</div>
+<p class="font-medium text-muted-light dark:text-muted-dark">2:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Panel de Servicios para Mascotas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#13a4ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              display: ["Manrope"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="flex h-screen">
+<aside class="w-64 flex-col bg-background-light dark:bg-background-dark border-r border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-2 p-6">
+<span class="material-symbols-outlined text-primary text-4xl">
+pets
+</span>
+<h1 class="text-xl font-bold text-slate-900 dark:text-white">Pet Care</h1>
+</div>
+<nav class="flex-1 space-y-2 p-4">
+<a class="flex items-center gap-3 rounded-lg bg-primary/20 px-3 py-2 text-primary" href="#">
+<span class="material-symbols-outlined"> dashboard </span>
+<span class="text-sm font-medium">Panel</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined"> group </span>
+<span class="text-sm font-medium">Clientes</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined"> pets </span>
+<span class="text-sm font-medium">Mascotas</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined"> assignment </span>
+<span class="text-sm font-medium">Planes</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined"> event </span>
+<span class="text-sm font-medium">Citas</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined"> medical_services </span>
+<span class="text-sm font-medium">Tratamientos</span>
+</a>
+</nav>
+</aside>
+<div class="flex flex-1 flex-col">
+<header class="flex h-16 items-center justify-end border-b border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark px-6">
+<div class="flex items-center gap-4">
+<button class="rounded-full p-2 text-slate-600 dark:text-slate-400 hover:bg-primary/10 dark:hover:bg-primary/20">
+<span class="material-symbols-outlined"> notifications </span>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnbcwRaKb2s9F3HmWAHY8zyU-jt_i9N5eKXRePVxubXXTF3y_nTBSpnEG7n8KpTnEpM5uLShBRkfPB7ZyFGndUJCMi8ITEQTGQtHblINnKFjeRUDKhhWWGWQL5bDloKqZ3HEItXWbZ6XMf6qQCK743YzdFLM7IojHqLJe08TKeQvfAAsrtOP4MWYfhcxOoKwnDHmr1A9xwhl91oJ3pymUftgfs_WYhzE40q3y8XXvT2fEukOcSzBjFpR8uHu0gm5ERbdRxHXOqBbBw")'></div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto p-8">
+<div class="mx-auto max-w-7xl">
+<div class="mb-8">
+<h2 class="text-3xl font-bold text-slate-900 dark:text-white">Panel</h2>
+<p class="text-slate-500 dark:text-slate-400">Resumen de las operaciones diarias</p>
+</div>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<div class="rounded-lg bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 p-6">
+<div class="flex items-center justify-between">
+<h3 class="text-base font-medium text-slate-600 dark:text-slate-400">Citas Próximas</h3>
+<span class="material-symbols-outlined text-primary"> event_upcoming </span>
+</div>
+<p class="mt-2 text-3xl font-bold text-slate-900 dark:text-white">15</p>
+</div>
+<div class="rounded-lg bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 p-6">
+<div class="flex items-center justify-between">
+<h3 class="text-base font-medium text-slate-600 dark:text-slate-400">Nuevos Clientes</h3>
+<span class="material-symbols-outlined text-primary"> person_add </span>
+</div>
+<p class="mt-2 text-3xl font-bold text-slate-900 dark:text-white">5</p>
+</div>
+<div class="rounded-lg bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 p-6">
+<div class="flex items-center justify-between">
+<h3 class="text-base font-medium text-slate-600 dark:text-slate-400">Nuevas Mascotas</h3>
+<span class="material-symbols-outlined text-primary"> loyalty </span>
+</div>
+<p class="mt-2 text-3xl font-bold text-slate-900 dark:text-white">8</p>
+</div>
+</div>
+<div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-5">
+<div class="rounded-lg bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 p-6 lg:col-span-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Servicios Populares</h3>
+<div class="mt-4 space-y-4">
+<div>
+<div class="flex justify-between text-sm font-medium text-slate-600 dark:text-slate-400">
+<span>Peluquería</span>
+<span>45%</span>
+</div>
+<div class="mt-1 h-2 rounded-full bg-primary/20 dark:bg-primary/30">
+<div class="h-2 rounded-full bg-primary" style="width: 45%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium text-slate-600 dark:text-slate-400">
+<span>Revisión Veterinaria</span>
+<span>25%</span>
+</div>
+<div class="mt-1 h-2 rounded-full bg-primary/20 dark:bg-primary/30">
+<div class="h-2 rounded-full bg-primary" style="width: 25%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium text-slate-600 dark:text-slate-400">
+<span>Entrenamiento</span>
+<span>15%</span>
+</div>
+<div class="mt-1 h-2 rounded-full bg-primary/20 dark:bg-primary/30">
+<div class="h-2 rounded-full bg-primary" style="width: 15%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium text-slate-600 dark:text-slate-400">
+<span>Alojamiento</span>
+<span>10%</span>
+</div>
+<div class="mt-1 h-2 rounded-full bg-primary/20 dark:bg-primary/30">
+<div class="h-2 rounded-full bg-primary" style="width: 10%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm font-medium text-slate-600 dark:text-slate-400">
+<span>Guardería</span>
+<span>5%</span>
+</div>
+<div class="mt-1 h-2 rounded-full bg-primary/20 dark:bg-primary/30">
+<div class="h-2 rounded-full bg-primary" style="width: 5%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-lg bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 lg:col-span-3">
+<div class="p-6">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Actividad Reciente</h3>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-sm">
+<thead class="bg-slate-50 dark:bg-slate-900/50">
+<tr>
+<th class="px-6 py-3 text-left font-medium text-slate-600 dark:text-slate-400">Cliente</th>
+<th class="px-6 py-3 text-left font-medium text-slate-600 dark:text-slate-400">Mascota</th>
+<th class="px-6 py-3 text-left font-medium text-slate-600 dark:text-slate-400">Servicio</th>
+<th class="px-6 py-3 text-left font-medium text-slate-600 dark:text-slate-400">Fecha</th>
+<th class="px-6 py-3 text-left font-medium text-slate-600 dark:text-slate-400">Estado</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-200 dark:divide-slate-800">
+<tr>
+<td class="whitespace-nowrap px-6 py-4 text-slate-800 dark:text-slate-200">Sophia Clark</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-800 dark:text-slate-200">Buddy</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-500 dark:text-slate-400">Peluquería</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-500 dark:text-slate-400">2024-03-15</td>
+<td class="whitespace-nowrap px-6 py-4">
+<span class="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary dark:bg-primary/20">Programada</span>
+</td>
+</tr>
+<tr>
+<td class="whitespace-nowrap px-6 py-4 text-slate-800 dark:text-slate-200">Ethan Miller</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-800 dark:text-slate-200">Luna</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-500 dark:text-slate-400">Revisión Veterinaria</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-500 dark:text-slate-400">2024-03-16</td>
+<td class="whitespace-nowrap px-6 py-4">
+<span class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900/50 dark:text-green-300">Completada</span>
+</td>
+</tr>
+<tr>
+<td class="whitespace-nowrap px-6 py-4 text-slate-800 dark:text-slate-200">Olivia Davis</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-800 dark:text-slate-200">Max</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-500 dark:text-slate-400">Entrenamiento</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-500 dark:text-slate-400">2024-03-17</td>
+<td class="whitespace-nowrap px-6 py-4">
+<span class="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary dark:bg-primary/20">Programada</span>
+</td>
+</tr>
+<tr>
+<td class="whitespace-nowrap px-6 py-4 text-slate-800 dark:text-slate-200">Noah Wilson</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-800 dark:text-slate-200">Bella</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-500 dark:text-slate-400">Alojamiento</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-500 dark:text-slate-400">2024-03-18</td>
+<td class="whitespace-nowrap px-6 py-4">
+<span class="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary dark:bg-primary/20">Programada</span>
+</td>
+</tr>
+<tr>
+<td class="whitespace-nowrap px-6 py-4 text-slate-800 dark:text-slate-200">Ava Taylor</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-800 dark:text-slate-200">Charlie</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-500 dark:text-slate-400">Guardería</td>
+<td class="whitespace-nowrap px-6 py-4 text-slate-500 dark:text-slate-400">2024-03-19</td>
+<td class="whitespace-nowrap px-6 py-4">
+<span class="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary dark:bg-primary/20">Programada</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>
